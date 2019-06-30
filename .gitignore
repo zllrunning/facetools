@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# specified
+.idea
+just_for_test.py
+test_imgs/
+result/
+checkpoint/backbone_ir50_ms1m_epoch120.pth
