@@ -20,9 +20,7 @@ from align.face_align import align
 res = align('imgs/single.jpg', save_path='./result', vis=False)
 res.show()
 ```
-<div align="center">
-  <img src="imgs/align.jpg" width="112px" />
-</div>
+![](imgs/align.jpg)
 
 * Do face encoding using IR50 model ([download pretrained model](https://pan.baidu.com/s/1L8yOF1oZf6JHfeY9iN59Mg#list/path=%2F))
 ```python
@@ -91,7 +89,7 @@ print(dist)  # output : 1.09022914
 dist = pdist(np.vstack([features[1], features[3]]), 'cosine')
 print(dist)  # output : 1.07447068
 ```
-##Acknowledgement
+## Acknowledgement
 - This repo is based on [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch). Many thanks to the excellent repo.
 
 
