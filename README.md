@@ -89,6 +89,33 @@ print(dist)  # output : 1.09022914
 dist = pdist(np.vstack([features[1], features[3]]), 'cosine')
 print(dist)  # output : 1.07447068
 ```
+
+### Using facetools in Your Project
+It is easy to use facetools in your project.
+```
+Your project
+│   README.md
+│   ...
+│   foo.py
+│
+└───facetools
+│
+└───directory1
+│   
+└───...
+```
+
+In `foo.py`, you can easily import facetools by adding:
+```python
+from facetools import detect_faces, show_results
+from PIL import Image
+
+def foo():
+    img = Image.open('/path/to/your/image') 
+    bounding_boxes, landmarks = detect_faces(img) 
+    show_results(img, bounding_boxes, landmarks) 
+```
+
 ## Acknowledgement
 - This repo is based on [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch). Many thanks to the excellent repo.
 
