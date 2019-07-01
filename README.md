@@ -2,7 +2,7 @@
 Easy-to-use face related tools, including face detection, landmark localization, alignment &amp; recognition, based on **PyTorch**.
 
 ## Quick start
-* Do face detection and landmark localization  using MTCNN
+* **Do face detection and landmark localization  using MTCNN**
 ```python
 from PIL import Image
 from align.detector import detect_faces
@@ -14,7 +14,7 @@ show_results(img, bounding_boxes, landmarks)  # visualize the results
 ```
 ![](imgs/single.jpg)   ![](imgs/detect_landmark.png)
 
-* Do alignment
+* **Do alignment**
 ```python
 from align.face_align import align
 res = align('imgs/single.jpg', save_path='./result', vis=False)
@@ -38,7 +38,7 @@ print(features.size())  # output : torch.Size([1, 512])
 
 ```
 
-* Calculate the distance between two images
+* **Calculate the distance between two images**
 ```python
 import numpy as np
 from PIL import Image
@@ -89,6 +89,18 @@ print(dist)  # output : 1.09022914
 dist = pdist(np.vstack([features[1], features[3]]), 'cosine')
 print(dist)  # output : 1.07447068
 ```
+
+* **Do face parsing**
+```python
+from PIL import Image
+from parsing.face_parsing import parsing, vis_parsing_maps
+
+image = Image.open('imgs/9.jpg')
+
+res = parsing(image)
+vis_parsing_maps(image, res, show=True, save_im=True)
+```
+![](imgs/9.jpg) ![](imgs/parsing.jpg)
 
 ### Using facetools in Your Project
 It is easy to use facetools in your project.
