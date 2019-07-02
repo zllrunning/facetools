@@ -22,7 +22,7 @@ res.show()
 ```
 ![](imgs/align.jpg)
 
-* Do face encoding using IR50 model ([download pretrained model](https://pan.baidu.com/s/1L8yOF1oZf6JHfeY9iN59Mg#list/path=%2F))
+* **Do face encoding using IR50 model** ([download pretrained model](https://pan.baidu.com/s/1L8yOF1oZf6JHfeY9iN59Mg#list/path=%2F))
 ```python
 from PIL import Image
 from util.extract_feature import extract_feature
@@ -129,7 +129,7 @@ def foo():
 ```
 
 ## Acknowledgement
-- This repo is based on [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch). Many thanks to the excellent repo.
+- This repo is based on [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch) and [face-parsing.PyTorch](https://github.com/zllrunning/face-parsing.PyTorch). Many thanks to the excellent repo.
 
 
 
